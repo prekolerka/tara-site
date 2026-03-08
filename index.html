@@ -10,23 +10,31 @@
 
 <body>
 
-  <header class="header">
-    <div class="container header__container">
-      <a href="#" class="logo">
-        <img src="img/logo.png" alt="Тара в Радость">
-      </a>
+ <header class="header">
+  <div class="container header__container">
+    <a href="#" class="logo">
+      <img src="img/logo.png" alt="Тара в Радость">
+    </a>
 
-      <nav class="nav">
-        <ul class="nav__list">
-          <li><a href="#about">О нас</a></li>
-          <li><a href="#products">Услуги</a></li>
-          <li><a href="#contacts">Контакты</a></li>
-        </ul>
-      </nav>
+    <nav class="nav" id="mobileMenu">
+      <ul class="nav__list">
+        <li><a href="#about">О нас</a></li>
+        <li><a href="#products">Услуги</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
 
-      <a href="#request" class="header__btn">Оставить заявку</a>
-    </div>
-  </header>
+      <a href="#contacts" class="header__btn nav__mobile-btn">Оставить заявку</a>
+    </nav>
+
+    <a href="#contacts" class="header__btn header__desktop-btn">Оставить заявку</a>
+
+    <button class="burger" id="burgerBtn" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
 
   <main>
     <section class="hero">
@@ -269,7 +277,7 @@
   </main>
 
 
-
+<script src="js/main.js"></script>
 </body>
 
 </html>
